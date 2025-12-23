@@ -3,6 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --surface-primary: #a7762d;
+  --surface-inverse: #fdfdfd;
+  --surface-secundary: #101828;
+  --surface-enabled-primary: #ffedd4;
+
+  --text-default: #101828;
+  --text-secundary: #101828;
+  --text-inverse: #fdfdfd;
+  --text-inverse-secundary: #eeeeee;
+
+  --icon-active: #daa04e;
 }
 
 @theme inline {
@@ -10,6 +22,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-surface-primary: var(--surface-primary);
+  --color-surface-inverse: var(--surface-inverse);
+  --color-surface-secundary: var(--surface-secundary);
+  --color-surface-enabled-primary: var(--surface-enabled-primary);
+
+  --color-text-default: var(--text-inverse);
+  --color-text-secundary: var(--text-secundary);
+  --color-text-inverse: var(--text-inverse);
+  --color-text-inverse-secundary: var(--text-inverse-secundary);
+
+  --color-icon-active: var(--icon-active);
 }
 
 body {

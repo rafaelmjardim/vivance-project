@@ -1,11 +1,11 @@
-import Home from "./components/home";
+import AboutStellFrame from "./components/aboutSteelFrame";
+import { Home } from "./components/home";
 
 export default function App() {
   return (
-    <div className="">
-      <main className="">
-        <Home/>
-      </main>
-    </div>
+    <main className="">
+      <Home />
+      <AboutStellFrame />
+    </main>
   );
 }

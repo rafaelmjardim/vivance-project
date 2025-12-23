@@ -3,7 +3,7 @@ import logo from "@/public/logo.png";
 
 export function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 flex item-center justify-between w-full py-6 px-48">
+    <header className="absolute z-10 top-0 left-0 right-0 flex item-center justify-between w-full py-6 px-48">
       <div className="flex items-center gap-4">
         <Image src={logo} alt="Logo do Vivance Incorporadora" height={40} />
         <span className="text-2xl text-text-inverse">

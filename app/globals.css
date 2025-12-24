@@ -22,6 +22,7 @@
   --text-active: #daa04e;
 
   --icon-active: #daa04e;
+  --icon-inverse: #fdfdfd;
 }
 
 @theme inline {
@@ -44,6 +45,7 @@
   --color-text-active: var(--text-active);
 
   --color-icon-active: var(--icon-active);
+  --color-icon-inverse: var(--icon-inverse);
 }
 
 body {

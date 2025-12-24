@@ -10,6 +10,7 @@
   --foreground: #171717;
 
   --surface-primary: #a7762d;
+  --surface-hover-primary: #946826;
   --surface-inverse: #fdfdfd;
   --surface-secundary: #101828;
   --surface-enabled-primary: #ffedd4;
@@ -32,6 +33,8 @@
   --color-surface-inverse: var(--surface-inverse);
   --color-surface-secundary: var(--surface-secundary);
   --color-surface-enabled-primary: var(--surface-enabled-primary);
+
+  --color-surface-hover-primary: var(--surface-hover-primary);
 
   --color-text-default: var(--text-inverse);
   --color-text-secundary: var(--text-secundary);

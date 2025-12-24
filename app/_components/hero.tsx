@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Header } from "./ui/header";
 import heroBackground from "@/public/home-backgorund.jpg";
 import { Button } from "./ui/button";
+import { HiArrowSmallRight } from "react-icons/hi2";
 
 export function Hero() {
   return (
@@ -20,7 +21,7 @@ export function Hero() {
       </div>
 
       <article className="grid gap-6 z-10 max-w-150">
-        <h1 className="text-text-inverse text-6xl">
+        <h1 className="text-text-inverse text-6xl leading-16">
           Construção Moderna em Steel Frame
         </h1>
 
@@ -30,7 +31,10 @@ export function Hero() {
         </p>
 
         <div className="flex items-center gap-4">
-          <Button>Solicitar orçamento</Button>
+          <Button>
+            Solicitar orçamento
+            <HiArrowSmallRight size={20} />
+          </Button>
           <Button isTransparent={true}>Ver catálogo</Button>
         </div>
       </article>

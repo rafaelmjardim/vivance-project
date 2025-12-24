@@ -19,6 +19,7 @@
   --text-secundary: #101828;
   --text-inverse: #fdfdfd;
   --text-inverse-secundary: #eeeeee;
+  --text-active: #daa04e;
 
   --icon-active: #daa04e;
 }
@@ -40,6 +41,7 @@
   --color-text-secundary: var(--text-secundary);
   --color-text-inverse: var(--text-inverse);
   --color-text-inverse-secundary: var(--text-inverse-secundary);
+  --color-text-active: var(--text-active);
 
   --color-icon-active: var(--icon-active);
 }

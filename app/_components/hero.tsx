@@ -3,6 +3,7 @@ import { Header } from "./ui/header";
 import heroBackground from "@/public/home-backgorund.jpg";
 import { Button } from "./ui/button";
 import { HiArrowSmallRight } from "react-icons/hi2";
+import { MouseAnimate } from "./ui/mouseAnimate";
 
 export function Hero() {
   return (
@@ -38,6 +39,8 @@ export function Hero() {
           <Button isTransparent={true}>Ver catálogo</Button>
         </div>
       </article>
+
+      <MouseAnimate />
     </section>
   );
 }

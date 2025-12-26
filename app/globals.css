@@ -16,13 +16,15 @@
   --surface-enabled-primary: #ffedd4;
 
   --text-default: #101828;
-  --text-secundary: #101828;
+  --text-secundary: #4a5565;
   --text-inverse: #fdfdfd;
   --text-inverse-secundary: #eeeeee;
   --text-active: #daa04e;
 
   --icon-active: #daa04e;
   --icon-inverse: #fdfdfd;
+
+  --text-md: 0.875rem;
 }
 
 @theme inline {
@@ -46,10 +48,12 @@
 
   --color-icon-active: var(--icon-active);
   --color-icon-inverse: var(--icon-inverse);
+
+  --text-md: var(--text-md);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-default);
   font-family: var(--font-roboto-sans);
 }

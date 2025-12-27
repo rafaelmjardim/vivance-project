@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Header } from "./ui/header";
-import heroBackground from "@/public/home-backgorund.jpg";
+import heroBackground from "@/public/hero-background.jpg";
 import { Button } from "./ui/button";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { MouseAnimate } from "./ui/mouseAnimate";

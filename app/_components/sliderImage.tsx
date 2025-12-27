@@ -1,14 +1,17 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
 
 export default function SliderImage() {
   return (
-    <section className="flex h-screen items-center">
-      <ImgComparisonSlider className="rounded-2xl shadow-2xl outline-none border border-gray-200">
-        <img slot="first" src="madeira.png" />
-        <img slot="second" src="steel.png" />
-      </ImgComparisonSlider>
-    </section>
+    <ImgComparisonSlider className="rounded-2xl outline-none shadow-2xl">
+      <img slot="first" src="casa2-completa.png" alt="Casa em steel frame" />
+      <img
+        slot="second"
+        src="casa2-estrutura.png"
+        alt="Estrutura de casa em steel frame"
+      />
+    </ImgComparisonSlider>
   );
 }

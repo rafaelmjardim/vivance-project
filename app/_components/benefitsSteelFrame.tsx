@@ -55,12 +55,12 @@ export function BenefitsSteelFrame() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-surface-inverse-secundary flex flex-col justify-center items-center">
+    <section className="py-32 px-4 sm:px-6 bg-surface-inverse-secundary flex flex-col justify-center items-center">
       <article className="text-center">
         <h1 className="text-3xl lg:text-4xl mb-6">
           Por que escolher Steel Frame?
         </h1>
-        <p className="text-text-secundary text-md sm:text-base">
+        <p className="text-text-secundary text-md sm:text-base max-w-140">
           Descubra as vantagens que fazem do Steel Frame a escolha preferida
           para construções modernas
         </p>

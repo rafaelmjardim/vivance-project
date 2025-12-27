@@ -1,6 +1,7 @@
 import { AboutStellFrame } from "./_components/aboutSteelFrame";
 import { BenefitsSteelFrame } from "./_components/benefitsSteelFrame";
 import { Hero } from "./_components/hero";
+import { ProjectCatalog } from "./_components/projectCatalog";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Hero />
       <AboutStellFrame />
       <BenefitsSteelFrame />
+      <ProjectCatalog />
     </main>
   );
 }

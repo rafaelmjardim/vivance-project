@@ -1,4 +1,5 @@
 import { AboutStellFrame } from "./_components/aboutSteelFrame";
+import { BenefitsSteelFrame } from "./_components/benefitsSteelFrame";
 import { Hero } from "./_components/hero";
 
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <main>
       <Hero />
       <AboutStellFrame />
+      <BenefitsSteelFrame />
     </main>
   );
 }

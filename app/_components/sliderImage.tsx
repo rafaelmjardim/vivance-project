@@ -3,7 +3,7 @@
 
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
 
-export default function SliderImage() {
+export function SliderImage() {
   return (
     <ImgComparisonSlider className="rounded-2xl outline-none shadow-2xl">
       <img slot="first" src="casa2-completa.png" alt="Casa em steel frame" />

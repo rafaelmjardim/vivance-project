@@ -1,6 +1,6 @@
-import SliderImage from "./sliderImage";
+import { SliderImage } from "./sliderImage";
 
-export default function AboutStellFrame() {
+export function AboutStellFrame() {
   return (
     <section className="py-32 bg-surface-inverse flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6">
       <article className="grid gap-6 max-w-120 sm:max-w-120 md:max-w-90 xl:max-w-160">

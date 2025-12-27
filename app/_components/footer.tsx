@@ -1,0 +1,74 @@
+import footerBackground from "@/public/footer-background.jpg";
+import logo from "@/public/logo.png";
+import Image from "next/image";
+import {
+  LuFacebook,
+  LuInstagram,
+  LuLink,
+  LuLinkedin,
+  LuYoutube,
+} from "react-icons/lu";
+
+export function Footer() {
+  return (
+    <footer className="relative overflow-hidden flex w-full h-125">
+      <Image
+        src={footerBackground}
+        alt="Material em steel frame"
+        className="absolute object-cover w-full h-full"
+      />
+      <div className=" px-4 sm:px-6 bg-surface-secundary/90 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
+        <div className="container mx-auto flex gap-8">
+          <div className="w-87">
+            <div className="flex items-center gap-4 mb-4">
+              <Image
+                src={logo}
+                alt="Logo do Vivance Incorporadora"
+                height={30}
+              />
+              <span className="hidden xl:inline-flex text-xl text-text-inverse">
+                Vivance Incorporadora
+              </span>
+            </div>
+            <p className="text-text-grey-light max-w-85">
+              Construindo o futuro com tecnologia, qualidade e sustentabilidade.
+            </p>
+          </div>
+
+          <div className="w-87">
+            <h4 className="text-text-inverse mb-4">Links rápidos</h4>
+            <ul className="text-text-grey-light flex flex-col gap-2">
+              <li>Sobre</li>
+              <li>Benecícios</li>
+              <li>Projetos</li>
+              <li>Contato</li>
+            </ul>
+          </div>
+
+          <div className="w-87">
+            <h4 className="text-text-inverse mb-4">Serviços</h4>
+            <ul className="text-text-grey-light flex flex-col gap-2">
+              <li>Construção Residencial</li>
+              <li>Construção Comercial</li>
+              <li>Reformas</li>
+              <li>Consultoria de Projetos</li>
+            </ul>
+          </div>
+
+          <div className="w-87">
+            <h4 className="text-text-inverse mb-4">Redes sociais</h4>
+            <div className="text-text-inverse flex items-center gap-4">
+              <LuFacebook size={22} />
+              <LuInstagram size={22} />
+              <LuLinkedin size={22} />
+              <LuYoutube size={22} />
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-gray-700 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm w-full">
+          <p>© 2025 SteelFramePro. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

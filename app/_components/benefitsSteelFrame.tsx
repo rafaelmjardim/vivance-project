@@ -66,7 +66,7 @@ export function BenefitsSteelFrame() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="p-6 bg-surface-inverse rounded-2xl shadow-lg"
+            className="p-6 bg-surface-inverse rounded-2xl shadow-lg hover:shadow-2xl transition-all"
           >
             <div className="p-4 w-fit rounded-[10px] bg-surface-enabled-primary text-icon-active">
               {/* <LuLeaf /> */}

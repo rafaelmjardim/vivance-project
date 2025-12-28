@@ -19,8 +19,12 @@ export function Header() {
   return (
     <header className="py-6 px-4 container sm:px-24 mx-auto absolute z-10 top-0 left-0 right-0 flex items-center justify-between w-full">
       <div className="flex items-center gap-4">
-        <Image src={logo} alt="Logo do Vivance Incorporadora" height={40} />
-        <span className="hidden xl:inline-flex text-2xl text-text-inverse">
+        <Image
+          className="w-auto h-8 sm:h-10"
+          src={logo}
+          alt="Logo do Vivance Incorporadora"
+        />
+        <span className="inline-flex lg:hidden xl:inline-flex text-lg lg:text-2xl text-text-inverse">
           Vivance Incorporadora
         </span>
       </div>

@@ -1,15 +1,19 @@
+"use client";
+
 import footerBackground from "@/public/footer-background.jpg";
 import logo from "@/public/logo.png";
 import Image from "next/image";
-import {
-  LuFacebook,
-  LuInstagram,
-  LuLink,
-  LuLinkedin,
-  LuYoutube,
-} from "react-icons/lu";
+import { LuFacebook, LuInstagram, LuLinkedin, LuYoutube } from "react-icons/lu";
+import { menuArray } from "../constants/menu";
 
 export function Footer() {
+  const scrollSection = (id?: string) => {
+    if (!id) return;
+
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="relative overflow-hidden flex w-full h-full">
       <Image
@@ -17,7 +21,7 @@ export function Footer() {
         alt="Material em steel frame"
         className="absolute object-cover w-full h-full"
       />
-      <div className=" px-4 sm:px-6 py-20 bg-surface-secundary/90 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
+      <div className=" px-4 sm:px-6 py-14 bg-surface-secundary/90 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:flex">
           <div className="w-87">
             <div className="flex items-center gap-4 mb-4">
@@ -38,20 +42,43 @@ export function Footer() {
           <div className="w-87">
             <h4 className="text-text-inverse mb-4">Links rápidos</h4>
             <ul className="text-text-grey-light flex flex-col gap-2">
-              <li>Sobre</li>
-              <li>Benecícios</li>
-              <li>Projetos</li>
-              <li>Contato</li>
+              <li>
+                <button
+                  className="cursor-pointer transition-all hover:text-text-active"
+                  onClick={() => scrollSection("hero")}
+                >
+                  Início
+                </button>
+              </li>
+
+              {menuArray.map((menu, index) => (
+                <li key={index}>
+                  <button
+                    className="cursor-pointer transition-all hover:text-text-active"
+                    onClick={() => scrollSection(menu.sectionId)}
+                  >
+                    {menu.txt}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="w-87">
             <h4 className="text-text-inverse mb-4">Serviços</h4>
             <ul className="text-text-grey-light flex flex-col gap-2">
-              <li>Construção Residencial</li>
-              <li>Construção Comercial</li>
-              <li>Reformas</li>
-              <li>Consultoria de Projetos</li>
+              <li className="transition-all hover:text-text-active">
+                Construção Residencial
+              </li>
+              <li className="transition-all hover:text-text-active">
+                Construção Comercial
+              </li>
+              <li className="transition-all hover:text-text-active">
+                Reformas
+              </li>
+              <li className="transition-all hover:text-text-active">
+                Consultoria de Projetos
+              </li>
             </ul>
           </div>
 

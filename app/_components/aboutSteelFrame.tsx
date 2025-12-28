@@ -2,7 +2,10 @@ import { SliderImage } from "./sliderImage";
 
 export function AboutStellFrame() {
   return (
-    <section className="py-32 px-4 sm:px-6 bg-surface-inverse flex flex-col-reverse md:flex-row items-center justify-center gap-12">
+    <section
+      id="aboutSteelFrame"
+      className="py-32 px-4 sm:px-6 bg-surface-inverse flex flex-col-reverse md:flex-row items-center justify-center gap-12"
+    >
       <article className="grid gap-6 max-w-120 sm:max-w-120 md:max-w-90 xl:max-w-160">
         <h1 className="text-3xl lg:text-4xl">O que é Steel Frame?</h1>
         <p className="text-text-secundary text-md sm:text-base">

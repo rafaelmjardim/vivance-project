@@ -39,7 +39,10 @@ export function ProjectCatalog() {
   ];
 
   return (
-    <section className="py-32 px-4 sm:px-6 bg-surface-inverse flex flex-col justify-center items-center">
+    <section
+      id="projectCatalog"
+      className="py-32 px-4 sm:px-6 bg-surface-inverse flex flex-col justify-center items-center"
+    >
       <SectionHeader
         title="Catálogo de Projetos"
         description="Conheça nosso catálogo de projetos que transformamos em realidade com

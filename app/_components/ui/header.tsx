@@ -1,21 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import { HiMiniBars3 } from "react-icons/hi2";
-
-type Menu = {
-  txt: string;
-  href: string;
-};
+import { menuArray } from "@/app/constants/menu";
 
 export function Header() {
-  const menuArray: Menu[] = [
-    { txt: "Steel Frame", href: "steel-frame" },
-    { txt: "Benefícios", href: "beneficios" },
-    { txt: "Contato", href: "contato" },
-    { txt: "Catálogo de projetos", href: "catalogo-de-projetos" },
-    { txt: "Processos", href: "processo" },
-    { txt: "Outros serviços", href: "outros-servicos" },
-  ];
+  const scrollSection = (id?: string) => {
+    if (!id) return;
+
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="py-6 px-4 container sm:px-24 mx-auto absolute z-10 top-0 left-0 right-0 flex items-center justify-between w-full">
       <div className="flex items-center gap-4">
@@ -31,11 +28,13 @@ export function Header() {
 
       <ul className="hidden lg:inline-flex tems-center text-text-inverse gap-8">
         {menuArray.map((menu, index) => (
-          <li
-            key={index}
-            className="cursor-pointer transition-all hover:text-text-active"
-          >
-            {menu.txt}
+          <li key={index}>
+            <button
+              onClick={() => scrollSection(menu?.sectionId)}
+              className="cursor-pointer transition-all hover:text-text-active"
+            >
+              {menu.txt}
+            </button>
           </li>
         ))}
       </ul>

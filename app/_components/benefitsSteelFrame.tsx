@@ -7,6 +7,7 @@ import {
   LuShield,
   LuZap,
 } from "react-icons/lu";
+import { SectionHeader } from "./ui/sectionHeader";
 
 type Card = {
   title: string;
@@ -56,15 +57,11 @@ export function BenefitsSteelFrame() {
 
   return (
     <section className="py-32 px-4 sm:px-6 bg-surface-inverse-secundary flex flex-col justify-center items-center">
-      <article className="text-center">
-        <h1 className="text-3xl lg:text-4xl mb-6">
-          Por que escolher Steel Frame?
-        </h1>
-        <p className="text-text-secundary text-md sm:text-base max-w-140">
-          Descubra as vantagens que fazem do Steel Frame a escolha preferida
-          para construções modernas
-        </p>
-      </article>
+      <SectionHeader
+        title="Por que escolher Steel Frame?"
+        description="Descubra as vantagens que fazem do Steel Frame a escolha preferida
+          para construções modernas"
+      />
       <div className="container mx-auto mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {cards.map((card, index) => (
           <div

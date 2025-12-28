@@ -3,6 +3,7 @@ import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import residenciaSustentavel from "@/public/residencia-sustentavel.jpg";
 import residenciaAltoPadrao from "@/public/residencia-alto-padrao.jpg";
 import edificioComercial from "@/public/edificil-comercial.jpg";
+import { SectionHeader } from "./ui/sectionHeader";
 
 type Card = {
   label: string;
@@ -39,13 +40,11 @@ export function ProjectCatalog() {
 
   return (
     <section className="py-32 px-4 sm:px-6 bg-surface-inverse flex flex-col justify-center items-center">
-      <article className="text-center">
-        <h1 className="text-3xl lg:text-4xl mb-6">Catálogo de Projetos</h1>
-        <p className="text-text-secundary text-md sm:text-base max-w-140">
-          Conheça nosso catálogo de projetos que transformamos em realidade com
-          tecnologia Steel Frame
-        </p>
-      </article>
+      <SectionHeader
+        title="Catálogo de Projetos"
+        description="Conheça nosso catálogo de projetos que transformamos em realidade com
+          tecnologia Steel Frame"
+      />
       <div className="container mx-auto mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {cards.map((card, index) => (
           <div

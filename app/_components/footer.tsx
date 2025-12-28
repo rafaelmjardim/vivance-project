@@ -21,7 +21,7 @@ export function Footer() {
         alt="Material em steel frame"
         className="absolute object-cover w-full h-full"
       />
-      <div className=" px-4 sm:px-6 py-14 bg-surface-secundary/90 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
+      <div className=" px-4 sm:px-6 py-14 bg-surface-secundary/95 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:flex">
           <div className="w-87">
             <div className="flex items-center gap-4 mb-4">

@@ -1,7 +1,7 @@
 "use client";
 
 import { menuArray } from "@/app/constants/menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { LuX } from "react-icons/lu";
 
@@ -21,6 +21,18 @@ export function MenuSheet() {
     const el = document.getElementById(sectionId);
     el?.scrollIntoView({ behavior: "smooth" });
   }
+
+  useEffect(() => {
+    if (open) {
+      // salva o estado atual
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      document.body.style.overflow = "hidden";
+
+      return () => {
+        document.body.style.overflow = originalStyle;
+      };
+    }
+  }, [open]);
 
   return (
     <>

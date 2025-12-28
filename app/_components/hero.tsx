@@ -7,7 +7,10 @@ import { MouseAnimate } from "./ui/mouseAnimate";
 
 export function Hero() {
   return (
-    <section className="relative flex items-center h-screen bg-gray-950">
+    <section
+      id="hero"
+      className="relative flex items-center h-screen bg-gray-950"
+    >
       <Header />
 
       <div className="absolute inset-0">

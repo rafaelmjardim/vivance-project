@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import logo from "@/public/logo.png";
-import { HiMiniBars3 } from "react-icons/hi2";
 import { menuArray } from "@/app/constants/menu";
+import { MenuSheet } from "./MenuSheet";
 
 export function Header() {
   const scrollSection = (id?: string) => {
@@ -14,7 +14,7 @@ export function Header() {
   };
 
   return (
-    <header className="py-6 px-4 container sm:px-24 mx-auto absolute z-10 top-0 left-0 right-0 flex items-center justify-between w-full">
+    <header className="py-6 px-4 container sm:px-24 mx-auto absolute z-20 top-0 left-0 right-0 flex items-center justify-between w-full">
       <div className="flex items-center gap-4">
         <Image
           className="w-auto h-8 sm:h-10"
@@ -39,11 +39,9 @@ export function Header() {
         ))}
       </ul>
 
-      <HiMiniBars3
-        className="lg:hidden"
-        color="var(--color-icon-inverse)"
-        size={24}
-      />
+      <div className="lg:hidden">
+        <MenuSheet />
+      </div>
     </header>
   );
 }

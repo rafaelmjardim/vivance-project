@@ -11,14 +11,14 @@ import {
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden flex w-full h-125">
+    <footer className="relative overflow-hidden flex w-full h-full">
       <Image
         src={footerBackground}
         alt="Material em steel frame"
         className="absolute object-cover w-full h-full"
       />
-      <div className=" px-4 sm:px-6 bg-surface-secundary/90 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
-        <div className="container mx-auto flex gap-8">
+      <div className=" px-4 sm:px-6 py-20 bg-surface-secundary/90 z-20 w-full h-full flex flex-col items-center justify-center gap-22.5">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:flex">
           <div className="w-87">
             <div className="flex items-center gap-4 mb-4">
               <Image
@@ -26,7 +26,7 @@ export function Footer() {
                 alt="Logo do Vivance Incorporadora"
                 height={30}
               />
-              <span className="hidden xl:inline-flex text-xl text-text-inverse">
+              <span className="text-md xl:text-xl text-text-inverse">
                 Vivance Incorporadora
               </span>
             </div>

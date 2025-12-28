@@ -24,7 +24,7 @@ export function ProjectCatalog() {
     },
     {
       label: "Residencial",
-      title: "Residência alto padrãot",
+      title: "Residência alto padrão",
       details: "Área: 320m² - Prazo: 5 meses",
       imgSrc: residenciaAltoPadrao,
     },

@@ -44,7 +44,7 @@ export function ProjectCatalog() {
       className="py-32 px-4 sm:px-6 bg-surface-inverse flex flex-col justify-center items-center"
     >
       <SectionHeader
-        title="Catálogo de Projetos"
+        title="Catálogo de projetos"
         description="Conheça nosso catálogo de projetos que transformamos em realidade com
           tecnologia Steel Frame"
       />

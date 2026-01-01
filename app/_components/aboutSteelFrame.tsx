@@ -42,7 +42,7 @@ export function AboutStellFrame() {
       <div className="relative max-w-87 sm:max-w-120 lg:max-w-134 rounded-2xl">
         <SliderImage />
 
-        <div className="absolute -bottom-6 -left-6 w-fit bg-surface-primary shadow-lg p-6 rounded-[.875rem]">
+        <div className="absolute -bottom-6 -left-4 sm:-bottom-6 sm:-left-6 w-fit bg-surface-primary shadow-lg p-4 sm:p-6 rounded-[.875rem]">
           <h2 className="text-md sm:text-base text-text-inverse max-w-52.75">
             Tecnologia de ponta para construções residenciais e comerciais
           </h2>

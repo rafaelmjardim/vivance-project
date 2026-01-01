@@ -37,11 +37,13 @@ export function Hero() {
           </p>
 
           <div className="flex items-center gap-4 flex-col sm:flex-row">
-            <Button>
+            <Button className="w-full sm:w-fit">
               Solicitar orçamento
               <HiArrowSmallRight size={20} />
             </Button>
-            <Button isTransparent={true}>Ver catálogo</Button>
+            <Button className="w-full sm:w-fit" isTransparent={true}>
+              Ver catálogo
+            </Button>
           </div>
         </div>
       </article>

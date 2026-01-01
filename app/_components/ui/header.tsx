@@ -3,16 +3,10 @@
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import { menuArray } from "@/app/constants/menu";
-import { MenuSheet } from "./MenuSheet";
+import { MenuSheet } from "./menuSheet";
+import { scrollSection } from "@/app/_utils/utils";
 
 export function Header() {
-  const scrollSection = (id?: string) => {
-    if (!id) return;
-
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <header className="py-6 px-4 container sm:px-24 mx-auto absolute z-20 top-0 left-0 right-0 flex items-center justify-between w-full">
       <div className="flex items-center gap-4">

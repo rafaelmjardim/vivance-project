@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { Header } from "./ui/header";
 import heroBackground from "@/public/hero-background.jpg";
 import { Button } from "./ui/button";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { MouseAnimate } from "./ui/mouseAnimate";
+import { scrollSection } from "../_utils/utils";
 
 export function Hero() {
   return (
@@ -41,7 +44,11 @@ export function Hero() {
               Solicitar orçamento
               <HiArrowSmallRight size={20} />
             </Button>
-            <Button className="w-full sm:w-fit" isTransparent={true}>
+            <Button
+              className="w-full sm:w-fit"
+              isTransparent={true}
+              onClick={() => scrollSection("projectCatalog")}
+            >
               Ver catálogo
             </Button>
           </div>

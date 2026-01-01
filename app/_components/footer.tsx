@@ -5,15 +5,9 @@ import logo from "@/public/logo.png";
 import Image from "next/image";
 import { LuFacebook, LuInstagram, LuLinkedin, LuYoutube } from "react-icons/lu";
 import { menuArray } from "../constants/menu";
+import { scrollSection } from "../_utils/utils";
 
 export function Footer() {
-  const scrollSection = (id?: string) => {
-    if (!id) return;
-
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <footer className="relative overflow-hidden flex w-full h-full">
       <Image

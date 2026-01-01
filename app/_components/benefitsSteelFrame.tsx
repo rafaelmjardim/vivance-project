@@ -58,7 +58,7 @@ export function BenefitsSteelFrame() {
   return (
     <section
       id="benefitsSteelFrame"
-      className="py-32 px-4 sm:px-6 bg-surface-inverse-secundary flex flex-col justify-center items-center"
+      className="py-16 sm:py-32 px-4 sm:px-6 bg-surface-inverse-secundary flex flex-col justify-center items-center"
     >
       <SectionHeader
         title="Por que escolher Steel Frame?"

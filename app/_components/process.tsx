@@ -41,7 +41,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="py-32 px-4 sm:px-6 text-text-inverse bg-surface-secundary"
+      className="py-16 sm:py-32 px-4 sm:px-6 text-text-inverse bg-surface-secundary"
     >
       <div className="container mx-auto flex flex-col items-center text-center gap-10 sm:gap-12 lg:gap-16 ">
         <SectionHeader

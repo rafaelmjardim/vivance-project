@@ -18,6 +18,7 @@
 
   --text-default: #101828;
   --text-secundary: #4a5565;
+  --text-label: #364153;
   --text-inverse: #fdfdfd;
   --text-inverse-secundary: #eeeeee;
   --text-active: #daa04e;
@@ -27,6 +28,8 @@
   --icon-inverse: #fdfdfd;
 
   --text-md: 0.875rem;
+
+  --stroke-default: #d1d5dc;
 }
 
 @theme inline {
@@ -45,6 +48,7 @@
 
   --color-text-default: var(--color-text-default);
   --color-text-secundary: var(--text-secundary);
+  --color-text-label: var(--text-label);
   --color-text-inverse: var(--text-inverse);
   --color-text-inverse-secundary: var(--text-inverse-secundary);
   --color-text-active: var(--text-active);
@@ -52,6 +56,8 @@
 
   --color-icon-active: var(--icon-active);
   --color-icon-inverse: var(--icon-inverse);
+
+  --color-stroke-default: var(--stroke-default);
 
   --text-md: var(--text-md);
 }

@@ -5,7 +5,7 @@ import logo from "@/public/logo.png";
 import { menuArray } from "@/app/constants/menu";
 import { scrollSection } from "@/app/_utils/utils";
 import { LuChevronDown } from "react-icons/lu";
-import { MenuSheet } from "../ui/menuSheet";
+import { MenuSheet } from "../menuSheet";
 
 export function Header() {
   const openSelect = () => {

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import { menuArray } from "@/app/constants/menu";
-// import { MenuSheet } from "./menuSheet";
+import { MenuSheet } from "./menuSheet";
 import { scrollSection } from "@/app/_utils/utils";
 import { LuChevronDown } from "react-icons/lu";
 
@@ -41,7 +41,9 @@ export function Header() {
         ))}
       </ul>
 
-      <div className="lg:hidden">{/* <MenuSheet /> */}</div>
+      <div className="lg:hidden">
+        <MenuSheet />
+      </div>
     </header>
   );
 }

@@ -34,7 +34,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 sm:py-32px-4 sm:px-6 bg-surface-inverse-secundary items-center sm:gap-16"
+      className="py-16 sm:py-32px-4 px-4 sm:px-6 bg-surface-inverse-secundary items-center sm:gap-16"
     >
       <SectionHeader
         title="Solicite seu orçamento"

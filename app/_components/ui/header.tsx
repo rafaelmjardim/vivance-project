@@ -5,8 +5,13 @@ import logo from "@/public/logo.png";
 import { menuArray } from "@/app/constants/menu";
 import { MenuSheet } from "./menuSheet";
 import { scrollSection } from "@/app/_utils/utils";
+import { LuChevronDown } from "react-icons/lu";
 
 export function Header() {
+  const openSelect = () => {
+    alert("Em desenvolvimento");
+  };
+
   return (
     <header className="py-6 px-4 container sm:px-24 mx-auto absolute z-20 top-0 left-0 right-0 flex items-center justify-between w-full">
       <div className="flex items-center gap-4">
@@ -24,10 +29,13 @@ export function Header() {
         {menuArray.map((menu, index) => (
           <li key={index}>
             <button
-              onClick={() => scrollSection(menu?.sectionId)}
-              className="cursor-pointer transition-all hover:text-text-active"
+              onClick={() =>
+                menu.isSelect ? openSelect() : scrollSection(menu?.sectionId)
+              }
+              className="cursor-pointer transition-all hover:text-text-active flex items-center gap-2"
             >
               {menu.txt}
+              {menu.isSelect && <LuChevronDown size={20} />}
             </button>
           </li>
         ))}

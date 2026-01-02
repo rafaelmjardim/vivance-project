@@ -1,6 +1,7 @@
 type Menu = {
   txt: string;
   sectionId?: string;
+  isSelect?: boolean;
 };
 
 export const menuArray: Menu[] = [
@@ -9,5 +10,5 @@ export const menuArray: Menu[] = [
   { txt: "Catálogo de projetos", sectionId: "projectCatalog" },
   { txt: "Processos", sectionId: "process" },
   { txt: "Contato", sectionId: "contact" },
-  { txt: "Outros serviços" },
+  { txt: "Outros serviços", isSelect: true },
 ];

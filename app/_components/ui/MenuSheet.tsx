@@ -3,12 +3,7 @@
 import { menuArray } from "@/app/constants/menu";
 import { useEffect, useState } from "react";
 import { HiMiniBars3 } from "react-icons/hi2";
-import { LuX } from "react-icons/lu";
-
-export type Menu = {
-  txt: string;
-  sectionId?: string;
-};
+import { LuChevronDown, LuX } from "react-icons/lu";
 
 export function MenuSheet() {
   const [open, setOpen] = useState(false);
@@ -69,10 +64,13 @@ export function MenuSheet() {
           {menuArray.map((item, index) => (
             <button
               key={index}
-              onClick={() => handleClick(item.sectionId)}
-              className="text-left text-text-inverse hover:text-text-active transition"
+              onClick={() =>
+                item.isSelect ? null : handleClick(item.sectionId)
+              }
+              className="text-left text-text-inverse flex items-center gap-2 hover:text-text-active transition"
             >
               {item.txt}
+              {item.isSelect && <LuChevronDown size={20} />}
             </button>
           ))}
         </nav>

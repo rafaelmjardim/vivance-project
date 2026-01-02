@@ -1,8 +1,11 @@
+"use client";
+
 import { LuBuilding2, LuClipboardList, LuWrench } from "react-icons/lu";
 import { SectionHeader } from "./ui/sectionHeader";
 import { IconType } from "react-icons";
 import { TbChecks } from "react-icons/tb";
 import { Button } from "./ui/button";
+import { linkWhatsApp } from "../_utils/utils";
 
 type Step = {
   title: string;
@@ -76,7 +79,13 @@ export function Process() {
           <p className="text-lg text-text-grey-light">
             Da fundação ao acabamento, acompanhamos cada etapa do seu projeto
           </p>
-          <Button>Iniciar meu projeto</Button>
+          <Button
+            onClick={() =>
+              linkWhatsApp("Olá,%20gostaria%20de%20iniciar%20meu%20projeto!")
+            }
+          >
+            Iniciar meu projeto
+          </Button>
         </div>
       </div>
     </section>

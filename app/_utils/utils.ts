@@ -6,3 +6,11 @@ export function scrollSection(id?: string) {
   const element = document.getElementById(id);
   element?.scrollIntoView({ behavior: "smooth" });
 }
+
+export function linkWhatsApp(customMessage?: string) {
+  const number = 5551998747124;
+  const defaultMessage = "Olá,%20gostaria%20de%20mais%20informações!";
+
+  const url = `https://wa.me/${number}?text=${customMessage ?? defaultMessage}`;
+  window.open(url, "_blank");
+}

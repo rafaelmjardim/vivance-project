@@ -6,7 +6,7 @@ import heroBackground from "@/public/hero-background.jpg";
 import { Button } from "./ui/button";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { MouseAnimate } from "./ui/mouseAnimate";
-import { scrollSection } from "../_utils/utils";
+import { linkWhatsApp, scrollSection } from "../_utils/utils";
 
 export function Hero() {
   return (
@@ -40,7 +40,7 @@ export function Hero() {
           </p>
 
           <div className="flex items-center gap-4 flex-col sm:flex-row">
-            <Button className="w-full sm:w-fit">
+            <Button className="w-full sm:w-fit" onClick={() => linkWhatsApp()}>
               Solicitar orçamento
               <HiArrowSmallRight size={20} />
             </Button>

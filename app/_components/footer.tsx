@@ -87,7 +87,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm w-full">
-          <p>© 2025 SteelFramePro. Todos os direitos reservados.</p>
+          <p>© 2026 Vivance Incorporadora. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
